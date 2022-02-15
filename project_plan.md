@@ -51,3 +51,7 @@ The project will be made available to the public on GitHub. It will be presented
 | **(Model building, TBD)** | 3rd progress report | 4/12/2022 |
 | **Presentation and report** | Oral presentation | 4/14-4/21/2022   |
 |  | Final report | TBD |
+
+# acknowledgment
+
+I would like to thank Prof. Na-Rae Han, Lindsey Rojtas and Sean Steinle for their help with the development of this project.
