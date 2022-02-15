@@ -52,6 +52,6 @@ The project will be made available to the public on GitHub. It will be presented
 | **Presentation and report** | Oral presentation | 4/14-4/21/2022   |
 |  | Final report | TBD |
 
-# acknowledgment
+# Acknowledgment
 
 I would like to thank Prof. Na-Rae Han, Lindsey Rojtas and Sean Steinle for their help with the development of this project.
