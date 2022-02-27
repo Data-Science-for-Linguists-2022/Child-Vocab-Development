@@ -1,5 +1,7 @@
 # Progress Report
 
+Man Ho Wong | m.wong@pitt.edu | Feb 27th, 2022
+
 ## Project creation
 - Date: 2/15/2022
 - Progress: Project finalized
