@@ -46,17 +46,10 @@ See [this page](https://creativecommons.org/licenses/by-nc-sa/3.0/) for more inf
 
 ## Progress
 
-- data integration
+I integrated the data I currated in [data_curation.ipynb](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_curation.ipynb) by merging some of the labels defining the CHAT files in the dataset. The process was documented in [data_preprocessing.ipynb](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_preprocessing.ipynb). In addition, I also cleaned the data by removing files recorded in less naturalistic situations (e.g., book readinga and elicited data). More details can also be found in [data_preprocessing.ipynb](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_preprocessing.ipynb).
 
-- data cleaning
+For exploratory analysis, I tried `pylangacq`'s functions for a few linguistic measurements (e.g. mean length of utterance by morpheme, MLU-M), but I found a few limitations that come with the default functions. For example, I could not choose what punctuations to include or exclude, or what parts of speech (POSs) to include in my analysis. Therefore, I wrote three functions to get the same measurements with more options. These are functions to measure MLU, TTR and word frequency. In addition, I also wrote a function to convert the default age format (in year-month-day) to age in months. This will come in handy later when I need to analyze vocabulary development by age.
 
-- exploratory analysis
-    - MLU
-    - TTR
-    - Word frequency
-    - self-defined functions
-
-- etc.
-    - Reorganized directory
+Besides data processing and data analysis, I also reorganized my repo and updated my readme file to help visitors to navigate my repo.
 
 - Next step
