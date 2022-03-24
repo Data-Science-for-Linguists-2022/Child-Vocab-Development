@@ -38,3 +38,25 @@ Since the original data was published under Creative Commons Attribution-NonComm
 
 See [this page](https://creativecommons.org/licenses/by-nc-sa/3.0/) for more information.
 
+# 2nd Progress Report
+
+- Date: 4/24/2022
+- Current stage: data cleaning/ integration and exploratory analysis
+- Next step: linguistic analysis
+
+## Progress
+
+- data integration
+
+- data cleaning
+
+- exploratory analysis
+    - MLU
+    - TTR
+    - Word frequency
+    - self-defined functions
+
+- etc.
+    - Reorganized directory
+
+- Next step
