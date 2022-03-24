@@ -40,7 +40,7 @@ See [this page](https://creativecommons.org/licenses/by-nc-sa/3.0/) for more inf
 
 # 2nd Progress Report
 
-- Date: 4/24/2022
+- Date: 3/24/2022
 - Current stage: data cleaning/ integration and exploratory analysis
 - Next step: linguistic analysis
 
@@ -50,10 +50,9 @@ I integrated the data I currated in [data_curation.ipynb](https://github.com/Dat
 
 For exploratory analysis ([exploratory_analysis.ipynb](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_preprocessing.ipynb))(script type: `NEW CONTINUING`), I tried `pylangacq`'s functions for a few linguistic measurements (e.g. mean length of utterance by morpheme, MLU-M), but I found a few limitations that come with the default functions. For example, I could not choose what punctuations to include or exclude, or what parts of speech (POSs) to include in my analysis. Therefore, I wrote three functions to get the same measurements with more options. These are functions to measure MLU, TTR and word frequency. In addition, I also wrote a function to convert the default age format (in year-month-day) to age in months. This will come in handy later when I need to analyze vocabulary development by age. 
 
-Besides data processing and data analysis, I also reorganized my repo and updated my readme file to help visitors to navigate my repo.
+Besides data processing and data analysis, I also reorganized my repo and updated my [readme](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/README.md) file to help visitors to navigate my repo.
 
 ## Sharing plan
 
-I plan to use the same license as planed: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (**CC BY-NC-SA 3.0**) license. For details, see last progress report.
+I plan to use the same license as planned: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (**CC BY-NC-SA 3.0**) license. For details, see [last progress report](#1st-Progress-Report) or [LICENSE.md](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE.md).
 
-- Next step
