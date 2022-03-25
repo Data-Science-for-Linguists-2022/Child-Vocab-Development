@@ -11,7 +11,7 @@ Updated: March 24, 2022
 ## Thank you for visiting this project!
 
 This readme file helps you to navigate this repo.  
-For project overview, please see [project_plan.md](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
+For project overview, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
 
 ## Table of contents
 - [Repo directory](#repo-directory)
@@ -51,14 +51,14 @@ For project overview, please see [project_plan.md](https://github.com/Data-Scien
 
 The following scripts form the pipeline for data processing and analysis. Each generates the data required by the next script. They should be executed in the same sequence as listed:
 
-1. [`data_curation.ipynb`]() curates datasets from CHILDES needed for this project.
-2. [`data_preprocessing.ipynb`]() integrates datasets curated and cleans the data before analysis.
-3. [`exploratory_analysis.ipynb`]() explores what kinds of linguistic analysis can be done with the curated data.
+1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_curation.ipynb) curates datasets from CHILDES needed for this project.
+2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_preprocessing.ipynb) integrates datasets curated and cleans the data before analysis.
+3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
 4. [`linguistic_analysis.ipynb`](#) *Under development*
 
 # Reports
 
-- [`progress_report.md`](#) documents the development of this project.
+- [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.
 - [`final_report.*`](#) *Under development*
 - [`presentation.*`](#) *Under development*
 
@@ -85,5 +85,5 @@ See this [page](https://talkbank.org/share/citation.html) for more information.
 
 ## Licenses
 
-The non-code parts of this project are licensed under Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0). See [`LICENSE-non_code.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE-non_code.md) for more information.  
-The rest of this project is licensed under GNU General Public License Version 3 (GPLv3). See [`LICENSE.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE.md) for more information.
+The non-code parts of the project are licensed under Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0). See [`LICENSE-non_code.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE-non_code.md) for more information.  
+The rest of the project is licensed under GNU General Public License Version 3 (GPLv3). See [`LICENSE.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE.md) for more information.
