@@ -29,7 +29,7 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
 
 ```
 ./
- |---codes/                          # codes for data processing/analysis
+ |---code/                           # code for data processing/analysis
  |   |---etc/                        # e.g. pylangacq notes
  |   |---data_curation.ipynb
  |   |---data_preprocessing.ipynb
@@ -51,9 +51,9 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
 
 The following scripts form the pipeline for data processing and analysis. Each generates the data required by the next script. They should be executed in the same sequence as listed:
 
-1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_curation.ipynb) curates datasets from CHILDES needed for this project.
-2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/data_preprocessing.ipynb) integrates datasets curated and cleans the data before analysis.
-3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/codes/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
+1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb) curates datasets from CHILDES needed for this project.
+2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb) integrates datasets curated and cleans the data before analysis.
+3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
 4. [`linguistic_analysis.ipynb`](#) *Under development*
 
 # Reports
