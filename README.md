@@ -85,11 +85,11 @@ The data used in this project was downloaded from the CHILDES database:
 See this [page](https://talkbank.org/share/citation.html) for more information.
 
 ## Python package `PyLangAcq`
-This Python package was used in this project for data processing and analysis. Citation:
+The following Python package was used in this project for data processing and analysis:
 > Lee, Jackson L., Ross Burkholder, Gallagher B. Flinn, and Emily R. Coppess. 2016. Working with CHAT transcripts in Python. Technical report TR-2016-02, Department of Computer Science, University of Chicago.  
 > Github repo: https://github.com/jacksonllee/pylangacq
 
-The package is license under the MIT License. See [`pylangacq_license.txt`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/pylangacq_license.txt) for more information.
+The package is licensed under the MIT License. See [`pylangacq_license.txt`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/pylangacq_license.txt) for more information.
 
 
 ## Acknowledgment
