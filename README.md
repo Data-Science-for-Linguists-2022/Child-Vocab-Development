@@ -14,6 +14,7 @@ This readme file helps you to navigate this repo.
 For project overview, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
 
 ## Table of contents
+
 - [Repo directory](#repo-directory)
 - [Data processing and analysis](#data-processing-and-analysis)
 - [Reports](#reports)
@@ -64,12 +65,15 @@ The following scripts form the pipeline for data processing and analysis. Each g
 
 
 # Running the codes
+
 Coming soon :-)
 
 ## Requirements
+
 Coming soon :-)
 
 ## Data
+
 Coming soon :-)
 
 # About
@@ -78,10 +82,19 @@ Coming soon :-)
 The data used in this project was downloaded from the CHILDES database:  
 > MacWhinney, B. (2000). The CHILDES Project: Tools for analyzing talk. Third Edition. Mahwah, NJ: Lawrence Erlbaum Associates.
 
-## Acknowledgment
-Coming soon :-)
-
 See this [page](https://talkbank.org/share/citation.html) for more information.
+
+## Python package `PyLangAcq`
+This Python package was used in this project for data processing and analysis. Citation:
+> Lee, Jackson L., Ross Burkholder, Gallagher B. Flinn, and Emily R. Coppess. 2016. Working with CHAT transcripts in Python. Technical report TR-2016-02, Department of Computer Science, University of Chicago.  
+> Github repo: https://github.com/jacksonllee/pylangacq
+
+The package is license under the MIT License. See [`pylangacq_license.txt`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/pylangacq_license.txt) for more information.
+
+
+## Acknowledgment
+
+Coming soon :-)
 
 ## Licenses
 
