@@ -23,6 +23,7 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
   - [Data](#data)
 - [About](#about)
   - [Data source](#data-source)
+  - [Python package `PyLangAcq`](#python-package-pylangacq)
   - [Acknowledgment](#acknowledgment)
   - [License](#license)
 
@@ -35,6 +36,7 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
  |   |---data_curation.ipynb
  |   |---data_preprocessing.ipynb
  |   |---exploratory_analysis.ipynb
+ |   |---pylangacq_license.txt
  |          
  |---data_samples/                   # data samples for testing the codes
  |
