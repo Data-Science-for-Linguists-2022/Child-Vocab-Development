@@ -23,7 +23,7 @@ def get_age_m(ymd) -> float:
 def utt_len_w(f_reader, participants='CHI', ignore=[]) -> List[float]:
     """
     Get a list of utterance length by words (MLU-w) for all the utterances
-    in the file_reader. 
+    in the f_reader. 
     
     Parameters
     f_reader : pylangacq.Reader object
@@ -61,7 +61,7 @@ def utt_len_w(f_reader, participants='CHI', ignore=[]) -> List[float]:
 def utt_len_m(f_reader, participants='CHI', ignore=[]) -> List[float]:
     """
     Get a list of utterance length by morphemes (MLU-m) for all the utterances
-    in the file_reader. 
+    in the f_reader. 
     
     Parameters
     f_reader : pylangacq.Reader object
@@ -101,7 +101,7 @@ def utt_len_m(f_reader, participants='CHI', ignore=[]) -> List[float]:
 def get_pos_pro(f_reader, participants='CHI', pos=[], ref_pos=[])-> List[float]:
     """
     Get a list of utterance length by morphemes (MLU-m) for all the utterances
-    in the file_reader. 
+    in the f_reader. 
     
     Parameters
     f_reader : pylangacq.Reader object
@@ -145,7 +145,7 @@ def get_pos_pro(f_reader, participants='CHI', pos=[], ref_pos=[])-> List[float]:
 def get_wfreq(f_reader, participants='CHI', pos=[]):
     """
     Get a list of utterance length by morphemes (MLU-m) for all the utterances
-    in the file_reader. 
+    in the f_reader. 
     
     Parameters
     f_reader : pylangacq.Reader object
@@ -171,3 +171,33 @@ def get_wfreq(f_reader, participants='CHI', pos=[]):
                     (tok.pos not in POS_TO_IGNORE) and
                     ((not pos) or tok.pos in pos)]
     return Counter(tok_list_pos)
+
+#-------------------------------------------------------------------------------
+def get_vocab(f_reader, participants='CHI', pos=[]):
+    """
+    Get a set of words (vocabulary) from the f_reader. 
+    
+    Parameters
+    f_reader : pylangacq.Reader object
+    participants : str or list[str], optional, default 'CHI' 
+                   The participant(s) whose tokens will be extracted from.
+    pos : str or list[str], optional, default []
+          The target POS of query
+    
+    Returns
+    set{str}
+    
+    Remarks
+    - WORDS_TO_IGNORE (basic list of POS to be ignored) is the same as in
+      pylangacq.Reader.ttr .
+    - POS_TO_IGNORE (basic list of POS to be ignored) is the same as in
+      pylangacq.Reader.mlum, with the addition of '.', 'None' and 'n:prop'.
+    """
+    WORDS_TO_IGNORE = ["", "!", "+...", ".", ",", "?", "‡", "„", "0", "CLITIC"]
+    POS_TO_IGNORE   = ["", "!", "+...", "0", "?", "BEG", '.', None, 'n:prop']
+    toks = f_reader.tokens(participants=participants)
+    tok_list_pos = [tok.word for tok in toks if
+                    (tok.word not in WORDS_TO_IGNORE) and
+                    (tok.pos not in POS_TO_IGNORE) and
+                    ((not pos) or tok.pos in pos)]
+    return set(tok_list_pos)
