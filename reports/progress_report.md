@@ -60,15 +60,13 @@ The rest of the project is licensed under GNU General Public License Version 3 (
 
 # 2nd Progress Report
 
-- Date: 2/27/2022
+- Date: 4/12/2022
 - Current stage: Linguistic analysis
 - Next step: More linguistic analysis on all files; statistics
 
 ## Progress
 
-- Review
+In the last stage, I explored the data by checking whether differences between children of different background can be observed after data processing ([`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb))(script type: `EXISTING`). Specifically, I looked at the mean length of utterance (MLU), which is a common metric to measure vocabulary development in children. In this stage, I decided to dig a bit deeper into the data by analyzing the lexical semantic networks, which are supposed to be more informative about vocabulary development and acquisition. After doing some literature research, I decided to construct semantic networks based on word similarity derived from word vectors based on `ConceptNet-Numberbatch`.
 
-In the last stage, I explored the data by checking whether differences between children of different background can be observed after data processing. Specifically, I looked at the mean length of utterance (MLU), which is a common metric to measure vocabulary development in children. In this stage, I decided to dig a bit deeper into the data by analyzing the lexical semantic networks, which are supposed to be more informative about vocabulary development and acquisition. After doing some literature research, I decided to construct semantic networks based on word similarity derived from word vectors based on ConceptNet-Numberbatch.
-
-I also tried out different Python packages and decided to do my analysis mainly with the Gensim and NetworkX packages. In this stage, I only perform analysis on one file, but I developed a pipeline which can easily be expanded to other files in the dataset. This include a custom function and a general procedure to construct a semantic network from a list of words. I was looking for a suitable similarity threshold in literature and decided to use 0.19 as the threshold, although more testing will probably be needed. I recognized some problems in building semantic networks (such as the threshold problem and out-of-vocabulary problem), which I may need to address them in the next step depending on how they would affect my analysis.
+I also tried out different Python packages and decided to do my analysis mainly with the `Gensim` and `NetworkX` packages. In this stage, I only perform analysis on one file, but I developed a pipeline which can easily be expanded to other files in the dataset (see [`vocabulary_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb) (script type: `NEW CONTINUING`)). This include a custom function and a general procedure to construct a semantic network from a list of words. I was looking for a suitable similarity threshold in literature and decided to use 0.19 as the threshold, although more testing will probably be needed. I recognized some problems in building semantic networks (such as the threshold problem and out-of-vocabulary problem), which I may need to address them in the next step depending on how they would affect my analysis.
 
