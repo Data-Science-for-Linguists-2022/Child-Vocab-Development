@@ -58,3 +58,17 @@ I will use the same license as planned for the non-code parts of the project: Cr
 
 The rest of the project is licensed under GNU General Public License Version 3 (GPLv3). See [`LICENSE.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE.md) for more information.
 
+# 2nd Progress Report
+
+- Date: 2/27/2022
+- Current stage: Linguistic analysis
+- Next step: More linguistic analysis on all files; statistics
+
+## Progress
+
+- Review
+- files
+- Choosing word similarity metric
+- Choosing word vector model
+- Choosing Python packages
+- Choosing semantic network analysis metrics
