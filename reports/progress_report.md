@@ -67,8 +67,8 @@ The rest of the project is licensed under GNU General Public License Version 3 (
 ## Progress
 
 - Review
-- files
-- Choosing word similarity metric
-- Choosing word vector model
-- Choosing Python packages
-- Choosing semantic network analysis metrics
+
+In the last stage, I explored the data by checking whether differences between children of different background can be observed after data processing. Specifically, I looked at the mean length of utterance (MLU), which is a common metric to measure vocabulary development in children. In this stage, I decided to dig a bit deeper into the data by analyzing the lexical semantic networks, which are supposed to be more informative about vocabulary development and acquisition. After doing some literature research, I decided to construct semantic networks based on word similarity derived from word vectors based on ConceptNet-Numberbatch.
+
+I also tried out different Python packages and decided to do my analysis mainly with the Gensim and NetworkX packages. In this stage, I only perform analysis on one file, but I developed a pipeline which can easily be expanded to other files in the dataset. This include a custom function and a general procedure to construct a semantic network from a list of words. I was looking for a suitable similarity threshold in literature and decided to use 0.19 as the threshold, although more testing will probably be needed. I recognized some problems in building semantic networks (such as the threshold problem and out-of-vocabulary problem), which I may need to address them in the next step depending on how they would affect my analysis.
+
