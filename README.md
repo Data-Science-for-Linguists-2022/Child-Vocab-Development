@@ -37,6 +37,7 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
  |   |---data_preprocessing.ipynb
  |   |---exploratory_analysis.ipynb
  |   |---pylangacq_license.txt
+ |   |---vocabulary_analysis.ipynb
  |          
  |---data_samples/                   # data samples for testing the codes
  |
@@ -57,7 +58,7 @@ The following scripts form the pipeline for data processing and analysis. Each g
 1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb) curates datasets from CHILDES needed for this project.
 2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb) integrates datasets curated and cleans the data before analysis.
 3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
-4. [`linguistic_analysis.ipynb`](#) *Under development*
+4. [`vocabulary_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb) examines the characteristics of semantic networks in children of different SES group.
 
 # Reports
 
