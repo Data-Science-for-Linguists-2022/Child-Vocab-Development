@@ -6,28 +6,27 @@
 # Child-Vocab-Development
 
 Man Ho Wong  
-Updated: March 24, 2022
+Updated: April 21, 2022
 
 ## Thank you for visiting this project!
 
-This readme file helps you to navigate this repo.  
-For project overview, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
+This readme file helps you to navigate this repo. For project overview, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
 
-## Table of contents
+# Table of contents
 
-- [Repo directory](#repo-directory)
-- [Data processing and analysis](#data-processing-and-analysis)
-- [Reports](#reports)
-- [Running the codes](#running-the-codes)
+- [1 Repo directory](#1-repo-directory)
+- [2 Reports](#2-reports)
+- [3 Data processing and analysis](#3-data-processing-and-analysis)
+- [4 Running the code](#4-running-the-code)
   - [Requirements](#requirements)
   - [Data](#data)
-- [About](#about)
-  - [Data source](#data-source)
+- [5 About](#5-about)
+  - [Data sources](#data-sources)
   - [Python package `PyLangAcq`](#python-package-pylangacq)
   - [Acknowledgment](#acknowledgment)
-  - [License](#license)
+  - [Licenses](#licenses)
 
-# Repo directory
+# 1 Repo directory
 
 ```
 ./
@@ -51,7 +50,13 @@ For project overview, please see [`project_plan.md`](https://github.com/Data-Sci
  |---README.md                       # You are here
 ```
 
-# Data processing and analysis
+# 2 Reports
+
+- [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.
+- [`final_report.*`](#) *Under development*
+- [`presentation.*`](#) *Under development*
+
+# 3 Data processing and analysis
 
 The following scripts form the pipeline for data processing and analysis. Each generates the data required by the next script. They should be executed in the same sequence as listed:
 
@@ -60,40 +65,52 @@ The following scripts form the pipeline for data processing and analysis. Each g
 3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
 4. [`vocabulary_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb) examines the characteristics of semantic networks in children of different SES group.
 
-# Reports
-
-- [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.
-- [`final_report.*`](#) *Under development*
-- [`presentation.*`](#) *Under development*
-
-
-# Running the codes
-
-Coming soon :-)
+# 4 Running the code
 
 ## Requirements
 
-Coming soon :-)
+The code is written in Python 3.9.7. For easy sharing, scripts are organized into Jupyter notebooks (see above).
+
+*Viewing*: You can view the notebooks either on GitHub or on [nbviewer.org](https:/./nbviewer.org/).
+
+*Running*: To run the code, you will need a [Jupyter Notebook interface](https://docs.jupyter.org/en/latest/install.html). You can also run the code on [Google Colab](https://colab.research.google.com/). 
+
+Below is a list of required libraries and packages that are not included in the Python Standard Library, as well as their versions tested in this project:
+
+- Gensim (4.1.2)
+- Matplotlib (3.4.3)
+- NumPy (1.20.3)
+- Pandas (1.3.4)
+- [PyLangAcq](https://pylangacq.org/) (0.16.0)
+- NLTK (3.6.5)
+- NetworkX (2.6.3)
+- scikit-learn (0.24.2)
+- Tqdm (4.62.3) (*Optional*, for showing progress bar during running)
 
 ## Data
 
 Coming soon :-)
 
-# About
+# 5 About
 
-## Data source
-The data used in this project was downloaded from the CHILDES database:  
+## Data sources
+
+The corpus data used in this project was downloaded from the CHILDES database:  
 > MacWhinney, B. (2000). The CHILDES Project: Tools for analyzing talk. Third Edition. Mahwah, NJ: Lawrence Erlbaum Associates.
 
 See this [page](https://talkbank.org/share/citation.html) for more information.
 
+This project also used data containing semantic vectors from [ConceptNet Numberbatch 19.08](https://github.com/commonsense/conceptnet-numberbatch), by
+Luminoso Technologies, Inc. You may redistribute or modify the
+data under a compatible Share-Alike license.
+
 ## Python package `PyLangAcq`
-The following Python package was used in this project for data processing and analysis:
+
+The following Python package was used in this project for processing CHAT files:
 > Lee, Jackson L., Ross Burkholder, Gallagher B. Flinn, and Emily R. Coppess. 2016. Working with CHAT transcripts in Python. Technical report TR-2016-02, Department of Computer Science, University of Chicago.  
 > Github repo: https://github.com/jacksonllee/pylangacq
 
 The package is licensed under the MIT License. See [`pylangacq_license.txt`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/pylangacq_license.txt) for more information.
-
 
 ## Acknowledgment
 
