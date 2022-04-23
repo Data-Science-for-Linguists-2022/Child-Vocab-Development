@@ -38,11 +38,13 @@ This readme file helps you to navigate this repo. For project overview, please s
  |   |---pylangacq_license.txt
  |   |---vocabulary_analysis.ipynb
  |          
- |---data_samples/                   # data samples for testing the codes
+ |---data_samples/                   # data samples for testing the code
  |
  |---reports/                        # reports, presentations
  |   |---images/
+ |   |---(final_report.md)
  |   |---progress_report.md
+ |   |---(summary_presentation.pdf)
  |
  |---.gitignore
  |---LICENSE.md
@@ -52,9 +54,9 @@ This readme file helps you to navigate this repo. For project overview, please s
 
 # 2 Reports
 
+- [`final_report.md`]() Coming soon :-)
 - [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.
-- [`final_report.*`](#) *Under development*
-- [`presentation.*`](#) *Under development*
+- [`summary_presentation.pdf*`]() Coming soon :-)
 
 # 3 Data processing and analysis
 
@@ -75,7 +77,7 @@ The code is written in Python 3.9.7. For easy sharing, scripts are organized int
 
 *Running*: To run the code, you will need a [Jupyter Notebook interface](https://docs.jupyter.org/en/latest/install.html). You can also run the code on [Google Colab](https://colab.research.google.com/). 
 
-Below is a list of required libraries and packages that are not included in the Python Standard Library, as well as their versions tested in this project:
+Below is a list of required libraries and packages that are not included in the Python Standard Library, as well as the version tested in this project:
 
 - Gensim (4.1.2)
 - Matplotlib (3.4.3)
@@ -112,11 +114,11 @@ The following Python package was used in this project for processing CHAT files:
 
 The package is licensed under the MIT License. See [`pylangacq_license.txt`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/pylangacq_license.txt) for more information.
 
-## Acknowledgment
-
-Coming soon :-)
-
 ## Licenses
 
 The non-code parts of the project are licensed under Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0). See [`LICENSE-non_code.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE-non_code.md) for more information.  
 The rest of the project is licensed under GNU General Public License Version 3 (GPLv3). See [`LICENSE.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/LICENSE.md) for more information.
+
+## Acknowledgment
+
+I would like to thank my instructors and fellow students of the course [Data Science for Linguists](https://naraehan.github.io/Data-Science-for-Linguists-2022/) for their help and valuable inputs. I would also like to express my special thanks to Prof. Na-Rae Han for helping me to review the course [Introduction to Computational Linguistics](https://sites.pitt.edu/~naraehan/ling1330/), which I missed last semester due to other commitments. Both courses helped me to devlop better computational thinking to work with large linguistic data.
