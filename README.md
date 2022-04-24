@@ -3,10 +3,10 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Data-Science-for-Linguists-2022/Child-Vocab-Development)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Data-Science-for-Linguists-2022/Child-Vocab-Development)
 
-# Child-Vocab-Development
+# Analysis of lexical semantic network growth in children from different socio-economic backgrounds  
 
-Man Ho Wong  
-Updated: April 21, 2022
+Man Ho Wong | Department of Neuroscience, University of Pittsburgh  
+April 24, 2022
 
 ## Thank you for visiting this project!
 
@@ -23,24 +23,30 @@ This readme file helps you to navigate this repo. For project overview, please s
 - [5 About](#5-about)
   - [Data sources](#data-sources)
   - [Python package `PyLangAcq`](#python-package-pylangacq)
-  - [Acknowledgment](#acknowledgment)
   - [Licenses](#licenses)
+  - [Acknowledgment](#acknowledgment)
 
 # 1 Repo directory
 
 ```
 ./
  |---code/                           # code for data processing/analysis
- |   |---etc/                        # e.g. pylangacq notes
+ |   |---etc/
+ |   |   |---PyLangAcq_notes.ipynb
+ |   |   |---pittchat.py
+ |   |
  |   |---data_curation.ipynb
  |   |---data_preprocessing.ipynb
  |   |---exploratory_analysis.ipynb
  |   |---pylangacq_license.txt
  |   |---vocabulary_analysis.ipynb
- |          
- |---data_samples/                   # data samples for testing the code
  |
- |---reports/                        # reports, presentations
+ |---data/                           # processed and unprocessed data
+ |   |---data_samples/               # (all hidden except data samples)
+ |       |---Brown.zip
+ |       |---eng_NA_corpus_list.csv
+ |
+ |---reports/                        # reports and presentation
  |   |---images/
  |   |---(final_report.md)
  |   |---progress_report.md
@@ -49,7 +55,7 @@ This readme file helps you to navigate this repo. For project overview, please s
  |---.gitignore
  |---LICENSE.md
  |---project_plan.md
- |---README.md                       # You are here
+ |---README.md                       # YOU ARE HERE
 ```
 
 # 2 Reports
