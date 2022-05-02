@@ -12,7 +12,9 @@ April 24, 2022
 
 This project aims to investigate the relationship between early vocabulary development in children from different socio-economic backgrounds and their mother's child-directed speech (CDS). Lexical semantic networks for the child speech (CS) and the CDS were constructed from individual files in a dataset collected from CHILDES (see [Data sources](#data-sources)).
 
-For the original project plan, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md). [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project and [`progress_presentation.pdf`](progress_presentation.pdf) summarized the progress at the end of the semester. **The final report can be found [here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/final_report.md).**
+For the original project plan, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md). [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project and [`progress_presentation.pdf`](progress_presentation.pdf) summarized the progress at the end of the semester. 
+
+**The final report can be found [here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/final_report.md).**
 
 [Here](https://github.com/Data-Science-for-Linguists-2022/Class-Lounge/blob/main/guestbooks/guestbook_manho.md) is the link for the guestbook.
 
