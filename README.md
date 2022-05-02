@@ -5,22 +5,25 @@
 
 # Analysis of lexical semantic network growth in children from different socio-economic backgrounds  
 
-Man Ho Wong | Department of Neuroscience, University of Pittsburgh  
+Man Ho Wong (m.wong@pitt.edu), University of Pittsburgh  
 April 24, 2022
 
 ## Thank you for visiting this project!
 
-This readme file helps you to navigate this repo. For project overview, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
+This project aims to investigate the relationship between early vocabulary development in children from different socio-economic backgrounds and their mother's child-directed speech (CDS). Lexical semantic networks for the child speech (CS) and the CDS were constructed from individual files in a dataset collected from CHILDES (see [Data sources](#data-sources)).
+
+For the original project plan, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md). [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project and [`progress_presentation.pdf`](progress_presentation.pdf) summarized the progress at the end of the semester. **The final report can be found [here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/final_report.md).**
+
+[Here](https://github.com/Data-Science-for-Linguists-2022/Class-Lounge/blob/main/guestbooks/guestbook_manho.md) is the link for the guestbook.
 
 # Table of contents
 
 - [1 Repo directory](#1-repo-directory)
-- [2 Reports](#2-reports)
-- [3 Data processing and analysis](#3-data-processing-and-analysis)
-- [4 Running the code](#4-running-the-code)
+- [2 Data processing and analysis](#2-data-processing-and-analysis)
+- [3 Running the code](#3-running-the-code)
   - [Requirements](#requirements)
   - [Data](#data)
-- [5 About](#5-about)
+- [4 About](#4-about)
   - [Data sources](#data-sources)
   - [Python package `PyLangAcq`](#python-package-pylangacq)
   - [Licenses](#licenses)
@@ -42,15 +45,13 @@ This readme file helps you to navigate this repo. For project overview, please s
  |   |---vocabulary_analysis.ipynb
  |
  |---data/                           # processed and unprocessed data
- |   |---data_samples/               # (all hidden except data samples)
- |       |---Brown.zip
- |       |---eng_NA_corpus_list.csv
+ |   |---data_samples/               # data samples
  |
  |---reports/                        # reports and presentation
- |   |---images/
- |   |---(final_report.md)
+ |   |---images/                     # images used in the final report
+ |   |---final_report.md
  |   |---progress_report.md
- |   |---(summary_presentation.pdf)
+ |   |---progress_presentation.pdf
  |
  |---.gitignore
  |---LICENSE.md
@@ -58,24 +59,16 @@ This readme file helps you to navigate this repo. For project overview, please s
  |---README.md                       # YOU ARE HERE
 ```
 
-# 2 Reports
-
-- [`final_report.md`]() Coming soon :-)
-- [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.
-- [`summary_presentation.pdf*`]() Coming soon :-)
-
-# 3 Data processing and analysis
+# 2 Data processing and analysis
 
 The following scripts form the pipeline for data processing and analysis. Each generates the data required by the next script. They should be executed in the same sequence as listed:
 
-1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb) curates datasets from CHILDES needed for this project.
-2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb) integrates datasets curated and cleans the data before analysis.
-3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) explores what kinds of linguistic analysis can be done with the curated data.
-4. [`vocabulary_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb) examines the characteristics of semantic networks in children of different SES group.
+1. [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb) ([nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb)) curates datasets from CHILDES needed for this project.
+2. [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb) ([nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb)) integrates datasets curated and cleans the data before analysis.
+3. [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) ([nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb)) explores what kinds of linguistic analysis can be done with the curated data.
+4. [`vocabulary_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb) ([nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/vocabulary_analysis.ipynb)) examines the characteristics of semantic networks in children of different SES group.
 
-# 4 Running the code
-
-## Requirements
+# 3 Running the code
 
 The code is written in Python 3.9.7. For easy sharing, scripts are organized into Jupyter notebooks (see above).
 
@@ -95,11 +88,7 @@ Below is a list of required libraries and packages that are not included in the 
 - scikit-learn (0.24.2)
 - Tqdm (4.62.3) (*Optional*, for showing progress bar during running)
 
-## Data
-
-Coming soon :-)
-
-# 5 About
+# 4 About
 
 ## Data sources
 
