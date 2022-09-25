@@ -5,17 +5,21 @@ May 1st, 2022
 
 ---
 
-# 1 Introduction and project development
+# 1 Background
 
-Mother's educational background and socio-economic status (SES) have been shown to influence early vocabulary development in children. For example, vocabulary size of children from families of higher SES have been shown to be larger than that of children from families of lower SES at the same age during early development. To goal of this project is to understand better how exactly the vocabulary development differs among children of different SES group, and how it is affected by the mother's child-directed speech (CDS).
+## 1.1 Introduction
 
-Originally, the project started quite amibitiously: I was planning to use data from two online databases, CHILDES (see next section) and WordBank. Since the tokens in WordBank are included in the MacArthur-Bates Communicative Development Inventory (MB-CDI) used in many studies to evaluate a child's vocabulary size, I planned to integrate the data from two databases by matching the tokens in CHILDES to those in WordBank, which would allow me to estimate the vocabulary size in each child in CHILDES. However, I realized that I would probably have no enough time for this project to integrate the two databases as it involves annotating thousands of files, not too mentioned that most files in CHILDES would not have enough words to represent a child's CDI-vocabulary. Therefore, I decided to use only CHILDES for this project and changed my analysis plan accordingly.
+A mother's educational background and socio-economic status (SES) have been shown to have significant influence on the child's early vocabulary development. For example, children coming from families of higher SES generally have larger vocabulary size than children from families of lower SES at the same age during early development. Although vocabulary size is a key indicator of early language development, vocabularies of children from different backgrounds may also differ in other dimensions, such as vocabulary diversity and structural complexity. However, most current studies on this topic focus on vocabulary size and we have very limited knowledge about how the socio-ecomomic background affects vocabulary development in other dimensions. To fill the research gap, the main goal of this project is to characterize the vocabulary structure in children of different SES by analyzing the lexical semantic network (a structure representing relations between words). Additionally, the lexical semantic network of maternal child-directed speech (CDS) was also examined to look for correlations between the mother's and the child's vocabulary.
 
-In the original project plan, I planned to quantify the CDI-vocabulary size in each child, as well as comparing the frequency of words in the mother's CDS and the age of acquisition (AOA) for the corresponding words. I planned to characterize the child speech (CS) and the CDS by using word count-based metrics, such as the mean length of utterance (MLU), type-to-token ratio (TTR), noun-to-verb ratio (NTVR) and word frequency by lexcial categories However, since information about the CDI word list and AOA for the words are not available in CHILDES, I decided to change my analysis focus from word count-based metrics to lexical semantic network analysis.
+## 1.2 Project development
 
-Lexical semantic network analysis focuses on word-word relationships. Differences in semantic networks have been found in children of various developmental conditions, such as typically devloped children and later talkers. However, there are no studies look at effects of SES on semantic network during development. I took this project as a chance to explore the potential of studying the effects of SES with semantic network analysis. In this project, I demonstrated how semantic network analysis can be performed with data combined from different previous studies. I also showed that semantic network analysis may provide a possible way to analyze a child's vocabulary development with only a subset of the child's vocabulary.
+The project started quite amibitiously in the beginning: I was planning to integrate the data from two online databases, [CHILDES](https://childes.talkbank.org/) (see next section) and [WordBank](http://wordbank.stanford.edu/). Tokens in WordBank come from the [MacArthur-Bates Communicative Development Inventories (MB-CDIs)](https://mb-cdi.stanford.edu/), which are used in many studies to evaluate a child's vocabulary size. To compare vocabularies of children from different studies in CHILDES fairly, I planned to first estimate the vocabulary size of each child in CHILDES with the same CDI standard by matching the tokens in CHILDES to those CDI tokens in WordBank. Ideally, this could possibly be a more naturalistic and reliable way of assessing a child's vocabulary than traditional parent-report questionnaires.
 
-For reference, the original project plan can be found [here]().
+After getting the CDI-vocabulary, I planned to quantify the growth of CDI-vocabulary size of each child from different family backgrounds to check if any SES effects can still be observed in data merged from multiple studies in CHILDES. I would then compare the age of acquisition (AOA) of each CDI word to the frequency of the corresponding word in the maternal CDS to look for any correlations between the mother's and the child's vocabulary. I also planned to characterize the child speech (CS) and the CDS by using common word count-based metrics (e.g., mean length of utterance (MLU), type-to-token ratio (TTR), noun-to-verb ratio (NTVR) and word frequency by lexical categories). However, as mentioned above, getting the CDI-vocabulary involves integrating data from the two databases. This would nearly be unaccomplishable in a time frame of less than three months as it would involve annotating thousands of files, not to mention that a lot of recordings in CHILDES do not have enough words for an accurate evaluation of a child's CDI-vocabulary. Because of these restrictions, I decided not to integrate the two databases but just use CHILDES as my data source for this project. Without evaluating vocabularies by a common standard like CDI, comparison of child vocabularies from different datasets by word count-based metrics would not be fair. Therefore, I changed my plan from word count-based analysis to lexical semantic network analysis.
+
+Lexical semantic network analysis focuses on word-word relationships. Differences in semantic networks have been found in children of various developmental conditions, such as in typically developed children or in late talkers. However, to my knowledge, no studies have looked at the effects of SES on lexical semantic network growth during development. I took this project as a chance to explore the potential of studying the effects of SES on vocabulary development with semantic network analysis. In this project, I demonstrated how a semantic network analysis can be performed fairly with data merged from different studies. I also showed that semantic network analysis provides a possible way to analyze a child's vocabulary development with only a subset of the child's vocabulary. For a summary of some interesting observations found in this project, please see the [Summary](#6-summary) section. 
+
+For reference, the original project plan can be found [here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).
 
 ---
 
@@ -36,19 +40,20 @@ The python package PyLangAcq was used to read CHAT files as suggested by Prof. N
 
 ## 2.3 Corpora used in this project
 
-There are 47 North American English corpora in CHILDES (see TalkBank's [browsable database](https://sla.talkbank.org/TBB/childes); also listed in `data/data_samples/childes/eng_NA_corpus_list.csv`). For this project, I collected the transcipts for both the CS and the associated CDS from the following 13 corpora in CHILDES: Bates, Bernstein, Brown, Clark, Demetras2, Gleason, HSLLD, Hall, Hicks, Nelson, NewmanRatner, Post and VanHouten.
+North American English was chosen as the target language for this project because of its abundant data available online. There are 47 North American English corpora in CHILDES (see TalkBank's [browsable database](https://sla.talkbank.org/TBB/childes); also listed in `data/data_samples/childes/eng_NA_corpus_list.csv`). For this project, I collected the transcipts for both the CS and the associated CDS from the following 13 corpora in CHILDES: Bates, Bernstein, Brown, Clark, Demetras2, Gleason, HSLLD, Hall, Hicks, Nelson, NewmanRatner, Post and VanHouten. These corpora fullfill the requirements of this study (see below).
 
 ## 2.4 Data search strategy
 
-Dataset curation was documented in [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb). Briefly, I screened for suitable CHAT files in three phases. In the first first phase, I narrowed down the scope of search by identifying the relevant corpora fitting a set of basic criteria:
+Dataset curation was documented in [`data_curation.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_curation.ipynb). Briefly, I screened for suitable CHAT files in three phases. In the first phase, I narrowed down the scope of search by identifying the relevant corpora fitting a set of basic criteria:
 - Participants: data includes child or mother
 - Child information: data contains child age, sex and socioeconomic status (SES) information
-- Mother information: data contains socioeconomic status (SES), education information
-For efficiency, not all files were read and screened:  Handling all corpora at once as one PyLangAcq `Reader` object is not memory-efficient, but reading each single CHAT file into individual `Reader`s does not allow parallelized reading and parsing and thus it is less efficient. Therefore, instead of reading all corpora at once or reading each CHAT file one by one,  CHAT files in each corpus were read and evaluated parallelly each time. As long as there was a CHAT file in a corpus meeting the above criteria, the corpus would be included in the next phase  (because CHAT files belonging to the same corpus are supposed to come from the same study contain similar header information).
+- Mother information: data contains SES or education information
 
-In the first phase, the 13 corpora mentioned previously were identified. These corpora were then downloaded to local drive. In the second phase, all CHAT files in the identified corpora were screened and only those matching the above criteria were kept. In addition to the previous criteria, I also narrowed the age range of the child participants down to 6 years old. In the third phase, the curated dataset was refined through out the data processing pipeline. The CHAT files matching the search criteria were indexed by their header information which was stored in a DataFrame called `data_idx`. `data_idx` was pickled and stored locally for further data processing and analysis later. The list of corpora identified were also pickled as a list `search_result` for quicker re-run of the search if needed.
+The above information can be found in the header of each CHAT file. For efficiency, not all files were read and screened:  Handling all corpora at once as one PyLangAcq `Reader` object is not memory-efficient, but reading each single CHAT file into individual `Readers` does not allow parallelized reading and parsing, and thus is less time-efficient. Therefore, instead of reading all corpora at once or reading each CHAT file one by one,  CHAT files in each corpus were read and evaluated parallelly each time. Besides, as long as a CHAT file in a corpus meets the above criteria, the corpus would be included in the next phase of data screening and the remaining files in the corpus will not be read (because  files from the same corpus are supposed to come from the same study contain similar header information).
 
-To organize the header information stored in each CHAT file in `data_idx`, I created the following variables for different attributes of a CHAT file: 
+The 13 corpora mentioned previously were identified in the first phase. These corpora were then downloaded to the local drive. In the second phase, all CHAT files in the identified corpora were screened and only those meeting the above criteria were kept. In addition to the previous criteria, I also narrowed the age range of the child participants down to 6 years old. In the third phase, the curated dataset was refined through out the data processing pipeline. The CHAT files meeting the search criteria were indexed by their header information and the index was stored in a Python DataFrame called `data_idx`. `data_idx` was pickled and stored locally for further data processing and analysis. The list of corpora identified were also pickled as a Python list `search_result` for quicker re-run of the data search directly from the second phase.
+
+To organize each CHAT file's header information stored in `data_idx`, I created the following variables for different attributes of a CHAT file: 
 - `mot_edu`: mother's education level 
 - `group`: child's developmental group, e.g. typically developed
 - `ses`: child's SES (socioeconomic status; same as mother's)
@@ -62,30 +67,30 @@ The figure below shows the composition of the curated dataset before data prepro
 
 ![data_composition_unprocessed.svg](images/data_composition_unprocessed.svg)
 
-The figure below shows the demographics of the child participants in the dataset before data preprocessing. Note that child participants involved in longitudinal studies may have multiple files in the dataset. Those file were recorded at different time and thus were treated as separate files in this project.
+The figure below shows the demographics of the child participants in the dataset before data preprocessing. Note that each child participant involved in longitudinal studies may have multiple files in the dataset. Those files from the same participant were recorded at different time points and thus were treated as separate data points in this project.
 
 ![child_demgph_unprocessed.svg](images/child_demgph_unprocessed.svg)
 
-As shown above in the participant demographics, different corpora use different sets of labels and definitions for the same variable (e.g. mother's education). Besides, there are files that were not needed (e.g. children in groups other than typically development). Therefore, the dataset curated in were cleaned and preprocessed before analysis.
+As shown above in the participant demographics, different corpora use different sets of labels and definitions for the same variable (e.g. mother's education). Besides, some files were not needed for this project (e.g. children in developmental groups other than typical development). Therefore, the dataset curated were cleaned before further analysis by using coherent variable definitions in `data_idx` and removing unneeded files.
 
 ---
 
 # 3 Data cleaning
 
-The curated dataset was further processed in [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb) to prepare the data for linguistic analysis later.
-
-The figure below shows the demographics of the child participants in the dataset after data preprocessing.
+The curated dataset was further processed to prepare the data for linguistic analysis later. The figure below shows the demographics of the child participants in the dataset after data preprocessing.
 
 ![child_demgph_processed.svg](images/child_demgph_processed.svg)
 
 In summary, the following changes were made to the index of the dataset (`data_idx`):
 1. Similar `mot_edu` labels in `data_idx` were merged and changed to custom labels.
-2. All entries in `data_idx` were labeled as `TD` for `group`.
+2. All entries in `data_idx` were labeled as `TD` (typical development) for the variable `group`.
 3. Similar `SES` labels were merged and changed to three classes: `WC` (working class), `MC` (middle class) and `UC` (upper class).
 4. Unknown labels were marked as `unspecified`.
 5. Entries collected from children of adolescent mothers were dropped.
 6. Entries containing recordings from less naturalistic situations or maternal interviews (without CDS) were dropped.
 7. A unique child ID was created for each entry.
+
+For details, see [`data_preprocessing.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/data_preprocessing.ipynb).
 
 After data preprocessing, 972 entries were dropped and there are 1639 remaining entries. The processed dataset was indexed by a DataFrame called `data_idx_processed`.
 
@@ -93,25 +98,26 @@ After data preprocessing, 972 entries were dropped and there are 1639 remaining 
 
 # 4 Exploratory data analysis
 
-The quality of the processed dataset was evaluated in [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb) Besides, the limitations the dataset were also identified for further data cleaning. The objectives of this section are summarized as follow: 
+The quality of the processed dataset was evaluated using mean length of utterance (MLU, see next section) in [`exploratory_analysis.ipynb`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/code/exploratory_analysis.ipynb). Besides, the limitations of the dataset were also identified for further data cleaning. The objectives of this section are summarized as follow: 
 1. To identify the tools available for measuring MLU:
     - Assess the tools available in the `PyLangAcq` package and identify their limitations
     - Develop custom functions specifically designed for this project
 2. To evaluate the quality and limitations of the processed dataset with MLU:
     - Is the sample size sufficient?
     - Is the sample distribution balanced so that fair comparison between different groups can be made?
-    - Can we really combine different corpora?
+    - Is vocabulary development still observable in the combined dataset consist of multiple corpora?
 
 ## 4.1 Evaluating dataset with MLU
 
 A common way to measure a child's linguistic productivity is to look at the child's mean length of utterance (MLU). In General, MLU increases with age during early development. It can be measured by morphemes (MLU-m) or by words (MLU-w):  
-`MLU-m = number of morphemes / number of utterances`
+`MLU-m = number of morphemes / number of utterances` or  
+`MLU-w = number of words / number of utterances`  
 
 The accuracy of MLU depends on the overall quality of the data, which relies on: 
 - correctly parsed speech
-- Sample size (total number of utterances)
+- sample size (total number of utterances)
 
-Therefore, by measuring MLU, we can assess whether the quality of the processed dataset is high enough for the study of vocabulary development: we should see an increase in MLU during development. Besides, if there is any effect of socio-economic status (SES) on vocabulary development, it should also be reflected by differences in MLU among different SES groups.
+Therefore, by measuring MLU, we can assess whether the quality of the processed dataset is good enough for the study of vocabulary development: we should see an increase in MLU during development. In addition, if SES has any effects on the early vocabulary development, it should be reflected by differences in MLU among different SES groups.
 
 MLU can be computed with the MLU functions in the `PyLangAcq` package. However, they have a few limitations which make them unsuited for this project. For example, these functions count the punctuation period (.) as a word or empty string (e.g., the annotation for the punctuation period; some corpora also annotate gestures or actions) as a morpheme. Consequently, utterances with no words but just punctuation would be included in the calculation of the mean. Besides, the `PyLangAcq` functions only return average values: you cannot get the distribution of utterance length, nor the median length (MdLU) or other MLU variants such as MLU5-w (mean length of five longest utterances by words).
 
@@ -237,7 +243,7 @@ The unchanged L and C during development show that global and local connectivity
 
 The results here also demonstrate that the average degree of a semantic network could be used as a proxy for vocabulary size, despite each network in the dataset only contains a subset of the child's vocabulary. Measuring average degree of a child's semantic network is potentially more efficient and naturalistic than measuring a child's vocabulary size through parent reporting using standardized word list such as the MacArthur-Bates Communicative Development Inventory (MB-CDI) used in most studies on early vocabulary development. It would be helpful in the future to further study the possibility of using average degree as a proxy for vocabulary size.
 
-For semantic networks in the mother's CDS, the network properties seems to be minimally influenced by SES. Specifically, the difference in average degree between MC and WC mothers is not as obvious as what we observed in children. Unfortunately, the sample size for UC was not sufficient to see any effects of SES. 
+For semantic networks in the maternal CDS, the network properties seems to be minimally influenced by SES. Specifically, the difference in average degree between MC and WC mothers is not as obvious as what we observed in children. Unfortunately, the sample size for UC was not sufficient to see any effects of SES. 
 
 ![net_prop_cds.svg](images/net_prop_cds.svg)
 
@@ -251,7 +257,7 @@ Two observations can be made from the above figure: First, the interaction betwe
 
 # 6 Summary
 
-This project performed simple network analysis on the dataset by first constructing lexical semantic networks from individual CHAT files in the dataset. The following observations were made from the semantic networks in CS and CDS:
+This project performed simple network analysis on the dataset by first constructing lexical semantic networks from individual CHAT files in the dataset. The following observations were made from the lexical semantic networks in CS and CDS:
 - The average shortest path length (L) and average local clustering coefficient (C) do not change with node number in networks containing more than 50 nodes, suggesting that the global and local network connectivity of a semantic network are fairly stable even when new nodes are added to the network.
 - L and C also do not change during development, suggesting that the global and local network connectivity are stable over time during early vocabulary development.
 - The average degree (K) could potentially be used as a proxy for vocabulary size in the assessment of early vocabulary growth.
