@@ -1,18 +1,21 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![non-code license](https://img.shields.io/badge/License_(non--code)-CC_BY--NC--SA_3.0-orange)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
-![GitHub last commit](https://img.shields.io/github/last-commit/Data-Science-for-Linguists-2022/Child-Vocab-Development)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Data-Science-for-Linguists-2022/Child-Vocab-Development)
 
-# Analysis of lexical semantic network growth in children from different socio-economic backgrounds  
+> This project was originally my term project for a [computational linguistics course](https://naraehan.github.io/Data-Science-for-Linguists-2022/) at Pitt. It was turned into a research project later and I am working on publishing the work.
 
-Man Ho Wong (m.wong@pitt.edu), University of Pittsburgh  
+# Analysis of lexical semantic network growth in children from different socio-economic backgrounds
+
+Man Ho Wong (m.wong@pitt.edu), University of Pittsburgh.  
 April 24, 2022
 
-## Thank you for visiting this project!
+This project aims to investigate the relationship between early vocabulary development in children from different socio-economic backgrounds and their mother's child-directed speech (CDS). Lexical semantic networks for the child speech (CS) and the CDS were constructed from individual files in a dataset collected from CHILDES (see [Data sources](#data-sources)).
 
-This project aims to investigate the relationship between early vocabulary development in children from different socio-economic backgrounds and their mother's child-directed speech (CDS). Lexical semantic networks for the child speech (CS) and the CDS were constructed from individual files in a dataset collected from CHILDES (see [Data sources](#data-sources)). For the original project plan, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md). [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project and [`progress_presentation.pdf`](progress_presentation.pdf) summarized the progress at the end of the semester. 
+For the original project plan, please see [`project_plan.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/project_plan.md).  
+[`progress_report.md`](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/progress_report.md) documents the development of this project.  
+[`progress_presentation.pdf`](progress_presentation.pdf) summarized the progress at the end of the spring semester 2022. 
 
-**The final report can be found [here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/final_report.md).**
+> **[Here](https://github.com/Data-Science-for-Linguists-2022/Child-Vocab-Development/blob/main/reports/final_report.md) is the link for the final report submitted to the course LING1340/2340.**
 
 The guestbook for the project can be found [Here](https://github.com/Data-Science-for-Linguists-2022/Class-Lounge/blob/main/guestbooks/guestbook_manho.md).
 
